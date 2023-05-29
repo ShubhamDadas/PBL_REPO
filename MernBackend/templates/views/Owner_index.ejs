@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Owner Side Page</title>
+	<link rel="stylesheet" href="/Flat_css/Student_index.css">
+	<link rel="stylesheet" href="/Flat_css/Flat.css">
+    <link rel="stylesheet" href="/Flat_css/Flat_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+	<div class="slider">
+		<div class="slide active">
+
+			<img src="/images/1 (1).png">
+
+		</div>
+
+		<div class="slide">
+
+			<img src="/images/2 (1).png" >
+
+		</div>
+
+		<div class="slide">
+
+			<img src="/images/3 (1).png" >
+
+		</div>	
+		<div class="slide">
+			<img src="/images/4 (1).png" >
+		</div>	
+		<div class="slide">
+			<img src="/images/5 (1).png" >
+		</div>
+		<div class="slide">
+			<img src="/images/6 (1).png" >
+		</div>	
+    <nav>
+			<a href="owner_index">Home</a>
+
+			<a href="about">About Us</a>
+
+			<a href="contact">Contact</a>
+
+			<a href="logout">Logout</a>
+
+		</nav>				
+
+	 <div class="form-box">
+		<h1>   Select Hostel or Flat </h1>
+	<div class="container">
+		<section id="selection">
+			<div>
+            <a href="/flat_index?email=<%= email %>">Flat</a>
+			</div>
+			<div>
+				<a href="/hostel_index?email=<%= email %>">Hostel</a>
+			</div>
+		</section>
+		</div>
+	</div>
+	</div>
+	<script>
+
+		window.addEventListener("DOMContentLoaded", function() {
+
+			const slides = document.querySelectorAll(".slide");
+
+			let currentSlide = 0;
+
+			function showSlide() {
+
+				slides[currentSlide].classList.add("active");
+
+			}
+
+			function hideSlide() {
+
+				slides[currentSlide].classList.remove("active");
+
+			}
+
+			function nextSlide() {
+
+				hideSlide();
+
+				currentSlide = (currentSlide + 1) % slides.length;
+
+				showSlide();
+
+			}
+
+			setInterval(nextSlide, 3000); // Change slide every 5 seconds
+
+			showSlide();
+
+		});
+
+	</script>
+
+
+
+</body>
+</html>

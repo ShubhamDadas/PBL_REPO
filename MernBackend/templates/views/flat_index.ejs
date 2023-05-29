@@ -1,0 +1,48 @@
+
+
+<!-- include header -->
+<%- include('flat_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <!-- <a href="/add_flat" class="border-shadow">
+                    <span class="text-gradient">Register New Flat</i></span>
+                </a> -->
+               <td> <a href="/add_flat?email=<%= email %>" class="border-shadow">
+                     
+                    <span class="text-gradient">Register New Flat</i></span>
+                </a>
+            </td>
+            </div>
+
+            <!-- form handling -->
+            <form action="/flat_index?email=<%= email %>" method="POST">
+                <p>Email: <%= email %></p>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>BuildingName</th>
+                            <th>RegisterationNumber</th>
+                            <th>FlatName</th>
+                            <th>Adderss</th>
+                            <th>Rent</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('flat_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('flat_footer') %>
+<!-- /include footer -->

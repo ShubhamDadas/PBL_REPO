@@ -1,0 +1,17 @@
+<% for(var i = 0; i < flats.length; i++) { %>
+    <tr>
+        <td><%= flats[i].BuildingName %></td>
+        <td><%= flats[i].registrationNumber %></td>
+        <td><%= flats[i].roomName %></td>
+        <td><%= flats[i].address %></td>
+        <td><%= flats[i].rent %></td>
+        <td><%= flats[i].action %>
+            <a href="/hostel_update/<%= flats[i]._id %>" class="btn border-shadow update">
+                <span class="text-gradient">UPDATE</i></span>
+            </a>
+            <a href="/hostel_delete/<%= flats[i]._id %>" class="btn border-shadow update">
+                <span class="text-gradient">DELETE</i></span>
+            </a>
+        </td>
+    </tr>
+<% } %> 

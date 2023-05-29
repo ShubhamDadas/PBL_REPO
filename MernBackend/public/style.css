@@ -1,0 +1,150 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header h1{
+    font-family:inherit;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    font-size: 70px;
+    cursor: pointer;
+    color: aqua;
+}
+
+/*
+.main-header{
+    background: url(back.jpg) center no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: 100vh;
+    
+}
+*/
+
+/*
+.main-header h2{
+	text-align: center;
+	position: relative;
+	top: 30%;
+	color: white;
+	cursor: pointer;
+}
+*/
+
+.logo span {
+    color: aliceblue;
+}
+
+
+.header{
+	font-family: sans-serif;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.navigation ul{
+    font-family:inherit;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.navigation ul li a{
+	text-decoration:none;
+	color:  whitesmoke;
+}
+
+.navigation ul li:hover{
+	background-color:transparent;
+    position: relative;
+}
+@import url('https://fonts.googleapis.com/css?family=Corben:700');
+
+h1 {
+	font-family: 'Corben', cursive;
+	font-size: 6rem;
+	color: white;
+	letter-spacing: 0.1rem;
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+}
+
+.hero {
+	background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
+	 min-height: 200vh;
+	min-height: 100rem;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	
+/*
+	&__content {
+		position: relative;
+		align-self: center;
+		padding: 3rem 0;
+	}
+*/
+}
+
+.snow {
+	position: absolute;
+	min-width: 100vw;
+	min-height: 200vh;
+	height: 200%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
+.drop-box{
+    display: flex;
+    /* padding-right: 40px; */
+    position:absolute;
+    border: 1px solid red;
+    top: 100%;
+    background-color: transparent;
+}
+.drop-box ul{
+    display: block;
+    border: 1px solid red;
+}
+
+/* .drop-box ul li{
+    border: 1px solid red;
+} */

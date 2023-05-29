@@ -1,0 +1,241 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header h1{
+    font-family:inherit;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    font-size: 70px;
+    cursor: pointer;
+    color: aqua;
+}
+
+/*
+.main-header{
+    background: url(back.jpg) center no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: 100vh;
+    
+}
+*/
+
+/*
+.main-header h2{
+	text-align: center;
+	position: relative;
+	top: 30%;
+	color: white;
+	cursor: pointer;
+}
+*/
+
+.logo span {
+    color: aliceblue;
+}
+
+
+.header{
+	font-family: sans-serif;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.navigation ul{
+    font-family:inherit;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.navigation ul li a{
+	text-decoration:none;
+	color:  whitesmoke;
+}
+
+.navigation ul li:hover{
+	background-color:transparent;
+    position: relative;
+}
+@import url('https://fonts.googleapis.com/css?family=Corben:700');
+
+h1 {
+	font-family: 'Corben', cursive;
+	font-size: 6rem;
+	color: white;
+	letter-spacing: 0.1rem;
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+}
+
+.hero {
+	background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
+	 min-height: 200vh;
+	min-height: 100rem;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	
+/*
+	&__content {
+		position: relative;
+		align-self: center;
+		padding: 3rem 0;
+	}
+*/
+}
+
+.snow {
+	position: absolute;
+	min-width: 100vw;
+	min-height: 200vh;
+	height: 200%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
+.drop-box{
+    display: flex;
+    /* padding-right: 40px; */
+    position:absolute;
+    border: 1px solid red;
+    top: 100%;
+    background-color: transparent;
+}
+.drop-box ul{
+    display: block;
+    border: 1px solid red;
+}
+
+
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+/* .drop-box ul li{
+    border: 1px solid red;
+} */

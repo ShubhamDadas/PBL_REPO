@@ -1,0 +1,44 @@
+
+
+
+<!-- include header -->
+<%- include('hostel_header') %>
+<!-- /include header -->
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                
+                <a href="/add_hostel?email=<%= email %>" class="btn border-shadow update">
+                    <span class="text-gradient">Register New Hostel</span>
+                </a>
+            </td>
+            </div>
+
+            <!-- form handling -->
+            <form action="/hostel_index?email=<%= email %>" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>HostelName</th>
+                            <th>RegisterationNumber</th>
+                            <th>RoomName</th>
+                            <th>Adderss</th>
+                            <th>Rent</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('hostel_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('hostel_footer') %>
+<!-- /include footer -->

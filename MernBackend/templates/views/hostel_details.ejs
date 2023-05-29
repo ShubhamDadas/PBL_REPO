@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Flats</title>
+  <link rel="stylesheet" href="/Flat_css/Flat_details.css">
+</head>
+  <body>
+	<div class="container">
+    <form action="/hostel_details/<%= flats._id %>" method="Get" >
+
+        <input type="hidden" name="id" value="<%= flats._id %>">
+
+		<div class="slideshow-container">
+			<% for (let i = 0; i < flats.images.length; i++) { %>
+				<div class="slide <%= i === 0 ? 'active' : '' %>">
+				  <img src="<%= flats.images[i] %>" alt="image is not available">
+				</div>
+			  <% } %>
+	  
+			  <button class="prev-btn">&#10094;</button>
+			  <button class="next-btn">&#10095;</button>
+		  </div>
+				<table>
+					<thead>
+						<tr>
+							<th>Key</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Building:</td>
+							<td><%= flats.BuildingName %></td>
+						</tr>
+						<tr>
+							<td>City:</td>
+							<td><%= flats.city %></td>
+						</tr>
+						<tr>
+							<td>Area:</td>
+							<td><%= flats.area %></td>
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td><%= flats.address %></td>
+						</tr>
+						<tr>
+							<td>Google Map Link:</td>
+							<td>
+							<% if (flats.googleMapLink) { %>
+								<a href="<%= flats.googleMapLink %>" target="_blank">Google Maps Link</a>
+							<% } else { %>
+								Not Available
+							<% } %>
+						</td>
+						</tr>
+						<tr>
+							<td>OwnerName</td>
+							<td><%= flats.ownerName %></td>
+						</tr>
+						<tr>
+							<td>Phone:</td>
+							<td><%= flats.ownerPhone %></td>
+						</tr>
+						<tr>
+							<td>Room No:</td>
+							<td><%= flats.roomName %></td>
+						</tr>
+						<tr>
+							<td>No of rooms:</td>
+							<td><%= flats.roomNo %></td>
+						</tr>
+						<tr>
+							<td>Rent:</td>
+							<td><%= flats.rent %></td>
+						</tr>
+						<tr>
+							<td>Facility:</td>
+							<td><%= flats.facility %></td>
+						</tr>
+						<tr>
+							<td>Rules:</td>
+							<td><%= flats.rules %></td>
+						</tr>
+						<!-- Add more rows as needed -->
+					</tbody>
+				</table>
+			
+        </form>
+	</div>
+	<script src="/js/flat_index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

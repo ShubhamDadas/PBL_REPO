@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  #header {
+    background-color:aquas;
+      color: aqua;
+/*        color: #fff;*/
+    padding: 20px;
+    text-align: center;
+      
+  }
+  
+  #search-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 500px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  #search-form h2 {
+    margin-top: 0;
+  }
+  
+  #search-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #search-form input[type="text"], #search-form select {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #search-form input[type="submit"] {
+      background-color: aqua;
+/*        background-color: mediumaquamarine;*/
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #search-results {
+    margin: 50px auto;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  #search-results h2 {
+    margin-top: 0;
+  }
+  
+  #search-results ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #search-results li {
+    margin-bottom: 10px;
+  }
+    .navigation{
+background-color:rgba(6, 134, 89, 0.228);
+}
+
+/* CSS for the filter form */
+
+.filter-form {
+
+width: 300px;
+
+padding: 20px;
+
+background-color: #f2f2f2;
+
+border-radius: 4px;
+
+}
+
+/* CSS for the input fields */
+
+.filter-form input {
+
+width: 100%;
+
+margin-bottom: 10px;
+
+padding: 10px;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+box-sizing: border-box;
+
+}
+
+/* CSS for the filter options */
+
+.filter-form .filter-options {
+
+margin-bottom: 10px;
+
+}
+
+/* CSS for the filter button */
+
+.filter-form button {
+
+width: 100%;
+
+padding: 10px;
+
+background-color: #4CAF50;
+
+color: white;
+
+border: none;
+
+border-radius: 4px;
+
+cursor: pointer;
+
+}
+
+.my-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #65c4b7;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; 
+}
+
+.my-button:hover {
+  background-color: #2099a6;
+}
+
+
+.navigation ul{
+font-family:inherit;
+display: flex;
+justify-content: space-around;
+}
+
+.navigation ul li{
+list-style: none;
+margin-left: 50px;
+padding: 25px;
+}
+.navigation ul li a{
+text-decoration:none;
+color:  white;
+}
+.navigation ul li:hover{
+
+background-color:aqua;
+    
+    }
+    html, body {
+width: 100%;
+height:100%;
+}
+
+body {
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hostel Search</title>
+    <link rel="stylesheet" href="/Flat_css/search_flat.css">
+	<link rel="stylesheet" href="/Flat_css/Flat.css">
+    <link rel="stylesheet" href="/Flat_css/Flat_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  </head>
+  <body>
+      <nav id="mainav" class="navigation"> 
+
+
+                <ul class="navigation">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+
+
+            </nav>
+<!--
+    <div id="header">
+      <h1>Hostel Search</h1>
+    </div>
+    
+-->
+    <div id="search-form">
+      <h2>Search for Flat</h2>
+        
+      <form action="/search_flat" method="get">
+          
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        
+        <label for="area">Area:</label>
+        <input type="text" id="area" name="area">
+         
+        <br></br>
+        <label for="Filter">Filter:</label>
+        <select name="myselect">
+            <option value="rent">Rent</option>
+            <option value="roomNo">No of Rooms</option>
+        </select>
+       <!-- <select id="rooms" name="roomNo">
+            
+        </select>  -->
+
+        <input type="submit" value="Search">
+
+        </form>
+    </div>
+        <div id="search-results">
+            <h2>Search Results</h2>
+            <table class="table">
+              <thead class="thead-dark">
+                  <tr>
+                      <th>BuildingName</th>
+                      <th>City</th>
+                      <th>Area</th>
+                      <th>FlatName</th>
+                      <th>No Of Rooms</th>
+                      <th>Adderss</th>
+                      <th>Rent</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+
+                  <% for(var i = 0; i < flats.length; i++) { %>
+                      <tr>
+                          <td><%= flats[i].BuildingName %></td>
+                          <td><%= flats[i].city %></td>
+                          <td><%= flats[i].area %></td>
+                          <td><%= flats[i].roomName %></td>
+                          <td><%= flats[i].roomNo%></td>
+                          <td><%= flats[i].address %></td>
+                          <td><%= flats[i].rent %></td>
+                          <td><%= flats[i].action %>
+                      
+                              <a href="/flat_details/<%=flats[i]._id %>" class="btn border-shadow update">
+                                  <span class="text-gradient">Details</i></span>
+                              </a> 
+                          </td>
+                      </tr>
+                      <% } %>
+              </tbody>
+          </table>
+    
+          </div>
+      
+  </body>
+</html>

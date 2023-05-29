@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Flat Ow</title>
+  <link rel="stylesheet" href="/Flat_css/Flat_form.css">
+</head>
+ 
+  <body>
+	<div class="container">
+		<h1>Flat Update</h1>
+		<form action="/hostel_update/<%= flats._id %>" method="POST" id="update_user">
+			<input type="hidden" name="id" value="<%= flats._id %>">
+			<label for="buildingName">Building Name:</label>
+            <input type="text" name="name" value="<%= flats.BuildingName %>" placeholder="Mark Stoenis">
+			
+			<label for="registrationNumber">Registration Number of Flat:</label>
+			<input type="text" id="registrationNumber" name="registrationNumber" value="<%= flats.registrationNumber %>" placeholder="Enter registration number of flat" required>
+            
+			<label for="area">Area:</label>
+			<input type="text" id="area" name="area" placeholder="Enter area" value="<%= flats.area %>" required>
+
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city" placeholder="Enter city" value="<%= flats.city %>" required>
+
+			<label for="address">Address:</label>
+			<textarea id="address" name="address" placeholder="Enter address" value="<%= flats.address %>" required></textarea>
+
+			<!-- {{!-- <label for="ownerName">Owner Name:</label>
+			<input type="text" id="ownerName" name="ownerName" placeholder="Enter owner name" required> --}} -->
+
+			<label for="ownerId">Owner ID:</label>
+			<input type="text" id="ownerId" name="ownerId" placeholder="Enter owner ID" value="<%= flats.ownerId %>" required>
+
+			<!-- {{!-- <label for="ownerMobile">Owner Mobile:</label>
+			<input type="text" id="ownerMobile" name="ownerPhone" placeholder="Enter owner mobile number" required> --}} -->
+
+			<label for="rent">Rent:</label>
+			<input type="number" id="rent" name="rent" placeholder="Enter rent" value="<%= flats.rent %>" required>
+
+            <label for="ownerId">No of Cots:</label>
+			<input type="text" id="ownerId" name="cotNo" placeholder="No. of Cots" value="<%= flats.cotNo %>" required>
+            <label for="roomName">Room Name:</label>
+			<input type="text" id="roomName" name="roomName" placeholder="Enter room name" value="<%= flats.roomName %>" required>
+
+			<label for="numberOfRooms">Number of Rooms:</label>
+			<input type="number" id="numberOfRooms" name="roomNo" placeholder="Enter number of rooms" value="<%= flats.roomNo %>" required>
+
+			<label for="rules">Rules:</label>
+			<textarea id="rules" name="rules" placeholder="Enter rules" value="<%= flats.rules %>" required></textarea>
+
+			<label for="facility">Facility:</label>
+			<textarea id="facility" name="facility" placeholder="Enter facility" value="<%= flats.facility %>" required></textarea>
+
+			<!-- {{!-- <label for="images">Images:</label>
+			<input type="file" id="images" name="images" accept="image/*" multiple required> --}} -->
+
+			<button type="submit" value="Register">Submit</button>
+		</form>
+	</div>
+	
+	<script src="/js/flat_index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

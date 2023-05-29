@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(135deg, white);
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 20%px;
+    background-color: #d4748c;
+}
+
+th, td {
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(135deg, #af4c5c);
+    color: black;
+}
+
+td {
+    background-color:  #decfd2;
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #a6bddb;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #6689a1;
+}
+
+tbody tr:hover {
+    background-color: #c3c3c3;
+}
+
+.slideshow-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    width: 50%;
+    height: 400px;
+    object-fit: contain;
+     /* Adjust the maximum height as needed */
+    margin: 0 auto;
+  }
+  
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
